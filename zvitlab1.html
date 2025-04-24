@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Звіт з лабораторних робіт</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Звіти з лабораторних робіт</h1>
+    <h2>з дисципліни "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ"</h2>
+    <h3>Студентки групи ІА-з21 Пасіченко Єлизавети Валеріївни</h3>
+  </header>
+
+  <main>
+    <div class="lab-buttons">
+      <button onclick="showLab('lab1')">Лабораторна №1</button>
+      <button onclick="showLab('lab2')">Лабораторна №2</button>
+      <button onclick="showLab('lab3')">Лабораторна №3</button>
+      <button onclick="showLab('lab4')">Лабораторна №4</button>
+      <button onclick="showLab('lab5')">Лабораторна №5</button>
+      <button onclick="showLab('lab6')">Лабораторна №6</button>
+      <button onclick="showLab('lab7')">Лабораторна №7</button>
+      <button onclick="showLab('lab8')">Лабораторна №8</button>
+      <button onclick="showLab('lab9')">Лабораторна №9</button>
+    </div>
+
+    <div class="content-container">
+      <aside id="lab-links" class="sidebar">
+	  
+	  
+	  </aside>
+
+      <section id="lab-content" class="content">
+        <!-- Блоки лабораторних робіт -->
+        <div id="lab1" class="lab-block hidden">
+		
+		<h2 id="topic1">ТЕМА: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. 
+РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ</h2>
+
+<h3 id="semantic-tags">1. Семантичні теги</h3>
+<p>У структурі сторінки використано основні семантичні теги: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> та <code>&lt;footer&gt;</code>, які визначають шапку, основну частину та нижній колонтитул документа відповідно.</p>
+
+<h3 id="html-elements">2. Основні елементи HTML</h3>
+
+<h4 id="h1">Заголовок першого рівня</h4>
+<pre><code>&lt;h1&gt;Каталог культурно-історичних та туристичних об’єктів України&lt;/h1&gt;</code></pre>
+
+<h4 id="h2">Заголовок другого рівня</h4>
+<pre><code>&lt;h2&gt;Визначні місця, що варто побачити&lt;/h2&gt;</code></pre>
+
+<h4 id="images">Зображення</h4>
+<pre><code>&lt;img src="1.jpg" alt="Площа Ринок, Львів" width="400"&gt;
+&lt;img src="2.jpg" alt="Софія Київська" width="400"&gt;
+</code></pre>
+
+<h4 id="table">Таблиця</h4>
+<pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Назва&lt;/th&gt;
+    &lt;th&gt;Місце розташування&lt;/th&gt;
+    &lt;th&gt;Тип&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Софія Київська&lt;/td&gt;
+    &lt;td&gt;Київ&lt;/td&gt;
+    &lt;td&gt;Культурна спадщина&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Хотинська фортеця&lt;/td&gt;
+    &lt;td&gt;Чернівецька обл.&lt;/td&gt;
+    &lt;td&gt;Історична пам’ятка&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+<h4 id="lists">Списки</h4>
+<p>Маркірований список:</p>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Інформацію про об’єкти&lt;/li&gt;
+  &lt;li&gt;Фотогалереї&lt;/li&gt;
+  &lt;li&gt;Карту об’єктів&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>Нумерований список:</p>
+<pre><code>&lt;ol&gt;
+  &lt;li&gt;Культурна спадщина&lt;/li&gt;
+  &lt;li&gt;Історичні споруди&lt;/li&gt;
+  &lt;li&gt;Природні пам’ятки&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+<h4 id="form">Форма</h4>
+<pre><code>&lt;form&gt;
+  &lt;label for="name"&gt;Ім’я:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label for="message"&gt;Повідомлення:&lt;/label&gt;&lt;br&gt;
+  &lt;textarea id="message" name="message" rows="4" cols="40"&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;button type="submit"&gt;Надіслати&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h4 id="link">Посилання на іншу WEB-сторінку</h4>
+<pre><code>&lt;a href="../../zvitlab1.html"&gt;Перейти до звіту про виконання лабораторної&lt;/a&gt;
+</code></pre>
+
+<h3 id="conclusion">Висновок</h3>
+<p>У лабораторній роботі створено першу версію HTML-сторінки з використанням семантичної структури та основних елементів: заголовків, зображень, таблиці, списків, форми та гіперпосилання. Обраною предметною галуззю став каталог культурно-історичних та туристичних об’єктів України, що має інформативну й візуально зручну подачу даних для користувача.</p>
+
+          
+        </div>
+
+        <div id="lab2" class="lab-block hidden">
+
+  <h2 id="topic2">КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ. ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.</h2>
+
+  <h3 id="tag-selectors">1. Селектори тегів</h3>
+  <p>Селектори тегів застосовуються напряму до HTML-елементів. Наприклад, стиль для всіх параграфів:</p>
+  <pre><code>p {
+  line-height: 1.6;
+}</code></pre>
+  <p>HTML-приклад:</p>
+  <pre><code>&lt;p&gt;Це приклад параграфа&lt;/p&gt;</code></pre>
+
+  <h3 id="class-selectors">2. Селектори класів</h3>
+  <p>Селектори класів використовуються для стилізації груп елементів з однаковим класом:</p>
+  <pre><code>.subtitle {
+  font-style: italic;
+  color: #3a3a3a;
+}</code></pre>
+  <p>HTML-приклад:</p>
+  <pre><code>&lt;h2 class="subtitle"&gt;Визначні місця&lt;/h2&gt;</code></pre>
+
+  <h3 id="id-selectors">3. Селектори ідентифікаторів</h3>
+  <p>Селектори ID застосовуються до унікальних елементів:</p>
+  <pre><code>#main-title {
+  text-transform: uppercase;
+  border-bottom: 2px solid #2a4d8f;
+}</code></pre>
+  <p>HTML-приклад:</p>
+  <pre><code>&lt;h1 id="main-title"&gt;Каталог об’єктів&lt;/h1&gt;</code></pre>
+
+  <h3 id="other-selectors">4. Інші селектори</h3>
+  <p>Приклади комбінаційних та атрибутних селекторів:</p>
+  <pre><code>h3 + ul {
+  padding-left: 25px;
+}
+
+form > input, form > textarea {
+  border: 1px solid #aaa;
+  padding: 5px;
+}
+
+input[type="email"] {
+  background-color: #eef7ff;
+}
+
+* {
+  box-sizing: border-box;
+}</code></pre>
+  <p>HTML-приклад (форма):</p>
+  <pre><code>&lt;form&gt;
+  &lt;input type="text" placeholder="Ім’я"&gt;
+  &lt;input type="email" placeholder="Email"&gt;
+  &lt;textarea placeholder="Повідомлення"&gt;&lt;/textarea&gt;
+&lt;/form&gt;</code></pre>
+
+  <h3 id="css-font-text">5. CSS: Шрифти, Текст, Таблиці, Фон, Контур, Списки, CSS-поглиблений</h3>
+
+  <h4 id="font">Шрифти</h4>
+  <pre><code>body {
+  font-family: Arial, sans-serif;
+}</code></pre>
+
+  <h4 id="text">Текст</h4>
+  <pre><code>h1 {
+  text-transform: uppercase;
+  color: #003366;
+}</code></pre>
+
+  <h4 id="table">Таблиця</h4>
+  <p>HTML:</p>
+  <pre><code>&lt;table&gt;
+  &lt;tr style="background-color:#e0f0ff;"&gt;
+    &lt;th&gt;Назва&lt;/th&gt;
+    &lt;th&gt;Місце&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Софія Київська&lt;/td&gt;
+    &lt;td&gt;Київ&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+  <p>CSS:</p>
+  <pre><code>.highlighted-table th {
+  background-color: #e0f0ff;
+  color: #003366;
+}</code></pre>
+
+  <h4 id="background">Фон</h4>
+  <p>Застосування фону до форми:</p>
+  <pre><code>.feedback-form {
+  background-color: #eef;
+}</code></pre>
+
+  <h4 id="border">Контур (border)</h4>
+  <pre><code>.rounded-img {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+}</code></pre>
+
+  <h4 id="lists">Списки</h4>
+  <p>Маркірований список:</p>
+  <pre><code>&lt;ul&gt;
+  &lt;li&gt;Об’єкт 1&lt;/li&gt;
+  &lt;li&gt;Об’єкт 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  <p>CSS:</p>
+  <pre><code>.custom-list li {
+  color: #004488;
+  margin-bottom: 5px;
+}</code></pre>
+
+  <h4 id="advanced-css">CSS Просунутий</h4>
+  <p>Приклад анімації при наведенні на зображення:</p>
+  <pre><code>.rounded-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}</code></pre>
+
+  <h3 id="conclusion2">Висновок</h3>
+  <p>У лабораторній роботі розглянуто основи CSS-селекторів, включаючи селектори тегів, класів, ID, а також інші складні селектори. Також застосовано стилі до шрифтів, тексту, таблиць, форм, списків і зображень, включаючи просунуті можливості CSS (анімації, псевдокласи). Результатом є покращене візуальне представлення HTML-сторінки.</p>
+
+</div>
+
+		
+        <div id="lab3" class="lab-block hidden"><h2 id="topic3"> Тема: ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX
+		<h3 id="lab3-task1">Завдання №2.1: Таблична верстка</h3>
+<p>Було створено веб-сторінку з табличною версткою, яка містить заголовок, бічне меню, основний вміст та додаткову інформацію.</p>
+
+<h4 id="lab3-task1-html">Фрагмент HTML-коду:</h4>
+<pre><code>&lt;table class="layout"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3" class="header"&gt;
+      &lt;h1&gt;Каталог культурно-історичних та туристичних об’єктів України&lt;/h1&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  ...
+&lt;/table&gt;
+</code></pre>
+
+<h4 id="lab3-task1-css">Фрагмент CSS-коду:</h4>
+<pre><code>.layout {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  ...
+}
+</code></pre>
+
+<h3 id="lab3-task2">Завдання №2.2: Блокова верстка з плаваючими елементами</h3>
+<p>На базі тієї ж структури було реалізовано сторінку з фіксованою та гумовою блоковою версткою за допомогою <code>float</code>.</p>
+
+<h4 id="lab3-task2-html">HTML-фрагмент:</h4>
+<pre><code>&lt;div class="sidebar"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#kyiv"&gt;Київ&lt;/a&gt;&lt;/li&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="main"&gt;
+  &lt;h2&gt;Софія Київська&lt;/h2&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4 id="lab3-task2-css">CSS-фрагмент:</h4>
+<pre><code>.sidebar {
+  float: left;
+  width: 20%;
+  background-color: #d9e4f5;
+  ...
+}
+
+.main {
+  float: left;
+  width: 55%;
+  ...
+}
+</code></pre>
+
+<h3 id="lab3-task3">Завдання №3: Верстка з використанням Flexbox</h3>
+<p>Було використано Flexbox для реалізації сучасного адаптивного макету.</p>
+
+<h4 id="lab3-task3-html">HTML:</h4>
+<pre><code>&lt;div class="courses"&gt;
+  &lt;div class="course"&gt;
+    &lt;h3&gt;Київ&lt;/h3&gt;
+    &lt;p&gt;Пам’ятки культури&lt;/p&gt;
+  &lt;/div&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+
+<h4 id="lab3-task3-css">CSS:</h4>
+<pre><code>.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+</code></pre>
+
+<h3 id="lab3-summary">Висновки</h3>
+<p>У ході виконання лабораторної роботи було засвоєно основні принципи табличної та блокової верстки, а також практичне використання сучасної технології Flexbox. Реалізовано різні типи верстки для однієї й тієї ж теми, що дозволяє порівняти підходи та обрати оптимальний для подальшого використання.</p>
+		
+		
+		</div>
+		
+      <div id="lab4" class="lab-block hidden">
+  <h2 id="topic4">Тема: АДАПТИВНА ВЕРСТКА HTML-ДОКУМЕНТУ</h2>
+
+  <p>Метою лабораторної роботи було створення вебсторінки з використанням CSS Grid-сітки та медіа-запитів для реалізації адаптивної верстки на трьох рівнях: десктоп, планшет і мобільний пристрій.</p>
+
+  <h3 id="1">Десктопна версія</h3>
+  <p>Для екранів шириною понад 992px використовується трьохколонкова структура з використанням CSS Grid.</p>
+
+  <h4>Фрагмент HTML-коду:</h4>
+  <pre><code>&lt;div class="container"&gt;
+  &lt;header&gt;...&lt;/header&gt;
+  &lt;div class="sidebar"&gt;...&lt;/div&gt;
+  &lt;main&gt;...&lt;/main&gt;
+  &lt;aside class="extra"&gt;...&lt;/aside&gt;
+  &lt;footer&gt;...&lt;/footer&gt;
+&lt;/div&gt;
+</code></pre>
+
+  <h4>Фрагмент CSS-коду:</h4>
+  <pre><code>.container {
+  display: grid;
+  grid-template-columns: 20% 55% 25%;
+  grid-template-areas:
+    "header header header"
+    "sidebar main extra"
+    "footer footer footer";
+  min-height: 100vh; /* ← зміна тут */
+}
+</code></pre>
+
+  <h3 id="2">Планшетна версія</h3>
+  <p>При ширині екрана менше 992px макет перебудовується у дві колонки: бічне меню переміщується зверху.</p>
+
+  <h4>Фрагмент CSS-коду:</h4>
+  <pre><code>@media (min-width: 600px) and (max-width: 1023px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    width: 25%;
+    order: 1;
+    background-color: #d9e4f5;
+  }
+
+  .main {
+    width: 75%;
+    order: 2;
+  }
+
+  .extra {
+    width: 100%;
+    order: 3;
+    background-color: #eef3fa;
+  }
+
+  .footer {
+    width: 100%;
+    order: 4;
+  }
+}
+</code></pre>
+
+  <h3 id="3">Мобільна версія</h3>
+  <p>Для екранів шириною менше 768px усі блоки виводяться один під одним у вигляді одноколонкової сітки.</p>
+
+  <h4>Фрагмент CSS-коду:</h4>
+  <pre><code>.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+  .sidebar,
+.main,
+.extra {
+  width: 100%;
+}
+</code></pre>
+
+  <h3 id="lab4-summary">Висновки</h3>
+  <p>У ході виконання лабораторної роботи було створено адаптивний вебсайт з використанням CSS Grid-сітки. Застосування медіа-запитів дозволило реалізувати гнучке відображення контенту на пристроях різної ширини, забезпечивши зручність перегляду на ПК, планшетах і смартфонах. Макет успішно адаптується до трьох основних розмірів екранів.</p>
+</div>
+
+        <div id="lab5" class="lab-block hidden"><h2 id="topic5">Тема ЛР5</h2><p>Опис ЛР5.</p></div>
+        <div id="lab6" class="lab-block hidden"><h2 id="topic6">Тема ЛР6</h2><p>Опис ЛР6.</p></div>
+        <div id="lab7" class="lab-block hidden"><h2 id="topic7">Тема ЛР7</h2><p>Опис ЛР7.</p></div>
+        <div id="lab8" class="lab-block hidden"><h2 id="topic8">Тема ЛР8</h2><p>Опис ЛР8.</p></div>
+        <div id="lab9" class="lab-block hidden"><h2 id="topic9">Тема ЛР9</h2><p>Опис ЛР9.</p></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 ІА-з21 Пасіченко Єлизавета</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
