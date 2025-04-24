@@ -52,11 +52,7 @@ function showLab(id) {
 	{ text: 'Мобільна версія', anchor: '#3' },
 	{ text: 'Висновок', anchor: '#lab4-summary' },
 	],
-    lab5: [{ text: 'Тема', anchor: '#topic5' }],
-    lab6: [{ text: 'Тема', anchor: '#topic6' }],
-    lab7: [{ text: 'Тема', anchor: '#topic7' }],
-    lab8: [{ text: 'Тема', anchor: '#topic8' }],
-    lab9: [{ text: 'Тема', anchor: '#topic9' }]
+    
   };
 
   const links = anchors[id] || [];
